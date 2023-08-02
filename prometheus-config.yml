@@ -1,14 +1,6 @@
-global:
-  scrape_interval: 15s
-  scrape_timeout: 10s
-  evaluation_interval: 15s
 scrape_configs:
-  - job_name: app
-    honor_timestamps: true
-    scrape_interval: 15s
-    scrape_timeout: 10s
-    metrics_path: /actuator/prometheus
-    scheme: http
+  - job_name: 'otel-collector'
+    scrape_interval: 2s
     static_configs:
-      - targets:
-          - application:8080
+      - targets: [ 'otel-collector:8889' ]
+      - targets: [ 'otel-collector:8888' ]
