@@ -1,3 +1,7 @@
+# Blog
+
+https://blog.devalpaca.net/spring/observility/opentelemetry
+
 # Opentelemetry Spring Example
 
 Opentelemetry는 분산된 환경에서 더 강력하고 편하게 관찰 하기(Traces, Metrics, Logs)을 위해 만들어진 오픈소스이다.
