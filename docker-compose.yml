@@ -1,4 +1,3 @@
-# schema.sql postgis
 version: "3"
 services:
   application:
